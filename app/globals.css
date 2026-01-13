@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Cosmic Light (Optional fallback, but primary requests deep purple) */
+    --background: 280 20% 98%;
+    --foreground: 280 50% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 280 50% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 50% 10%;
+    --primary: 270 80% 60%;
+    /* Vivid Purple */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 280 30% 96%;
+    --secondary-foreground: 280 50% 10%;
+    --muted: 280 10% 80%;
+    --muted-foreground: 280 20% 40%;
+    --accent: 300 80% 60%;
+    /* Pink/Magenta Accent */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 280 20% 90%;
+    --input: 280 20% 90%;
+    --ring: 270 80% 60%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    /* Cosmic Deep Purple Theme */
+    --background: 265 40% 10%;
+    /* #140822 Deep Purple Bg */
+    --foreground: 280 10% 96%;
+    /* #F3F1F6 */
+    --card: 265 35% 16%;
+    /* #24133B Lighter Purple Card */
+    --card-foreground: 280 10% 96%;
+    --popover: 265 35% 16%;
+    --popover-foreground: 280 10% 96%;
+    --primary: 270 70% 65%;
+    /* #9B5DE5 Radiant Purple */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 265 30% 25%;
+    /* #3E2458 Secondary Surface */
+    --secondary-foreground: 280 10% 96%;
+    --muted: 265 20% 50%;
+    --muted-foreground: 270 10% 70%;
+    --accent: 310 80% 65%;
+    /* #F15BB5 Hot Pink Accent */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 265 30% 30%;
+    --input: 265 30% 30%;
+    --ring: 270 70% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
