@@ -10,7 +10,7 @@ export const personalInfo = {
     availability: "Available for work",
     email: "kavisri4812@gmail.com",
     phone: "7904991178",
-    resumeUrl: "/Kavi Sri Maha _Python FullStack Developer-JAN.pdf",
+    resumeUrl: "resume_kavi_sri_maha_p-FEB.pdf",
     socials: [
         {
             name: "LinkedIn",
