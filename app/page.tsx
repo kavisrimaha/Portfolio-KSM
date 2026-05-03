@@ -4,6 +4,7 @@ import { Skills } from "@/components/sections/skills";
 import { Experience } from "@/components/sections/experience";
 import { Projects } from "@/components/sections/projects";
 import { Contact } from "@/components/sections/contact";
+import { personalInfo } from "@/lib/data";
 
 export default function Home() {
     return (
@@ -18,8 +19,10 @@ export default function Home() {
                 <Contact />
             </div>
 
-            <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border">
-                <p>© {new Date().getFullYear()} Premium Portfolio. Built with Next.js & Tailwind.</p>
+            <footer className="py-10 text-center text-xs text-muted-foreground/90 border-t border-border/60">
+                <p>
+                    © {new Date().getFullYear()} {personalInfo.name}. Built with Next.js & Tailwind.
+                </p>
             </footer>
         </main>
     );

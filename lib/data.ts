@@ -109,6 +109,7 @@ export const skills = [
         category: "Programming Languages",
         icon: Code2,
         iconColor: "text-emerald-500",
+        subtitle: "Core languages for apps, APIs, and JVM-backed systems.",
         items: ["Python", "Java"],
     },
     {
@@ -132,12 +133,14 @@ export const skills = [
         category: "Tools",
         icon: Settings,
         iconColor: "text-orange-500",
+        subtitle: "Version control, collaboration, and quick visual assets.",
         items: ["Git", "GitHub", "Canva"],
     },
     {
         category: "Soft Skills",
         icon: Sparkles,
         iconColor: "text-purple-500",
+        subtitle: "How I work with teams and deadlines.",
         items: ["Problem Solving", "Time Management", "Adaptability", "Attention to Detail"],
     },
 ];
