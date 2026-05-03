@@ -1,4 +1,4 @@
-import { Code2, Database, Layout, Server, Settings, Terminal, Github, Linkedin, Twitter, Globe, Phone, Mail, MapPin } from "lucide-react";
+import { Code2, Layout, Settings, Sparkles, Github, Linkedin } from "lucide-react";
 
 export const personalInfo = {
     name: "Kavi Sri Maha",
@@ -27,11 +27,28 @@ export const personalInfo = {
 
 export const experiences = [
     {
-        role: "Full Stack Developer – Intern",
+        role: "Python Development Intern",
+        company: "Cognifyz Technologies",
+        location: "Remote",
+        duration: "Sep – Oct 2025",
+        description:
+            "Python-based development work with strong problem-solving, communication, and attention to detail; proactive learning and ownership of new challenges.",
+    },
+    {
+        role: "Software Development Intern",
+        company: "Ancit Consulting",
+        location: "Dindigul",
+        duration: "Aug – Sep 2025",
+        description:
+            "Designed and developed a student attendance management system using PHP, MySQL, HTML, and CSS, emphasizing data accuracy, usability, and operational efficiency.",
+    },
+    {
+        role: "Technical Support Intern",
         company: "Kottravai Enterprises Private Limited",
         location: "Tenkasi",
-        duration: "July – August",
-        description: "Technical Supportive Intern. Gained hands-on experience in full stack development.",
+        duration: "Jul – Aug 2025",
+        description:
+            "Built a responsive end-to-end website (frontend, backend, deployment support). Technical assistance, troubleshooting, and maintenance for reliable UX.",
     },
 ];
 
@@ -65,7 +82,8 @@ export const projects = [
         description:
             "Full-stack AI chatbot with Python, React, and SQLite: JWT authentication, REST APIs, SQLAlchemy ORM, and Groq API integration for real-time streamed responses with a modular backend.",
         tech: ["Python", "React", "SQLite", "JWT", "SQLAlchemy", "Groq API"],
-        image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop",
+        image:
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
         links: [{ icon: Github, href: "https://github.com/kavisrimaha" }],
     },
     {
@@ -88,28 +106,39 @@ export const projects = [
 
 export const skills = [
     {
-        category: "Frontend",
+        category: "Programming Languages",
+        icon: Code2,
+        iconColor: "text-emerald-500",
+        items: ["Python", "Java"],
+    },
+    {
+        category: "Web Development",
         icon: Layout,
         iconColor: "text-blue-500",
-        items: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        items: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Tailwind CSS",
+            "Django",
+            "MySQL",
+            "PostgreSQL",
+            "REST API",
+            "ORM",
+        ],
     },
     {
-        category: "Backend",
-        icon: Server,
-        iconColor: "text-green-500",
-        items: ["Python", "Django", "Django REST Framework"],
-    },
-    {
-        category: "Databases",
-        icon: Database,
-        iconColor: "text-purple-500",
-        items: ["PostgreSQL", "MySQL", "SQL"],
-    },
-    {
-        category: "Tools & Others",
+        category: "Tools",
         icon: Settings,
         iconColor: "text-orange-500",
-        items: ["Git", "GitHub", "VS Code", "Problem Solving"],
+        items: ["Git", "GitHub", "Canva"],
+    },
+    {
+        category: "Soft Skills",
+        icon: Sparkles,
+        iconColor: "text-purple-500",
+        items: ["Problem Solving", "Time Management", "Adaptability", "Attention to Detail"],
     },
 ];
 
