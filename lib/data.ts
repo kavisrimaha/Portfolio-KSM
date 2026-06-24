@@ -1,16 +1,19 @@
-import { Code2, Layout, Settings, Sparkles, Github, Linkedin } from "lucide-react";
+import { Code2, Layout, Server, Database, Brain, Settings, Github, Linkedin } from "lucide-react";
 
 export const personalInfo = {
     name: "Kavi Sri Maha",
-    role: "Python Full Stack Developer",
-    title: "Python Full Stack Developer",
-    description: "Passionate about building real-world applications and continuously improving full stack development skills. Skilled in developing RESTful APIs, implementing CRUD operations, and designing scalable backend systems.",
+    role: "Full Stack Developer",
+    title: "Full Stack Developer",
+    description:
+        "Full Stack Developer (Fresher, 2026) with hands-on experience in Python, FastAPI, Django, REST API design, and SQL databases (MySQL, PostgreSQL). Built a RAG pipeline using LangChain, ChromaDB, and Sentence Transformers. Experienced with JWT authentication, SQLAlchemy ORM, Agile/SDLC, and Git/GitHub. CGPA 8.1/10, no arrears, with honors.",
+    contactBlurb:
+        "Open to full-stack Python and AI engineering roles where I can ship scalable APIs, intelligent features, and polished user experiences.",
     location: "Tenkasi, Tamil Nadu",
     timezone: "IST",
     availability: "Available for work",
     email: "kavisri4812@gmail.com",
     phone: "7904991178",
-    resumeUrl: "/resume_kavi_sri_maha_april.pdf",
+    resumeUrl: "/resume_kavi_sri_maha_python.pdf",
     socials: [
         {
             name: "LinkedIn",
@@ -27,28 +30,25 @@ export const personalInfo = {
 
 export const experiences = [
     {
-        role: "Python Development Intern",
-        company: "Cognifyz Technologies",
-        location: "Remote",
-        duration: "Sep – Oct 2025",
-        description:
-            "Python-based development work with strong problem-solving, communication, and attention to detail; proactive learning and ownership of new challenges.",
-    },
-    {
         role: "Software Development Intern",
-        company: "Ancit Consulting",
+        company: "ANCIT Consulting",
         location: "Dindigul",
         duration: "Aug – Sep 2025",
-        description:
-            "Designed and developed a student attendance management system using PHP, MySQL, HTML, and CSS, emphasizing data accuracy, usability, and operational efficiency.",
+        highlights: [
+            "Owned end-to-end delivery of a live Trainer Tracking System for the Naan Mudhalvan state government program (Java, Node.js, REST APIs), enabling real-time zone-wise and hub-wise session tracking for trainers and admins.",
+            "Built geo-tagged photo capture for session verification, 12-week curriculum progress tracking, student attendance logging, and expense reporting in one unified platform.",
+            "Delivered role-based access control (RBAC) for trainer and admin roles, and built RESTful API endpoints for real-time data submission and session management across Agile sprint cycles.",
+        ],
     },
     {
         role: "Technical Support Intern",
-        company: "Kottravai Enterprises Private Limited",
+        company: "Kottravai Enterprises",
         location: "Tenkasi",
-        duration: "Jul – Aug 2025",
-        description:
-            "Built a responsive end-to-end website (frontend, backend, deployment support). Technical assistance, troubleshooting, and maintenance for reliable UX.",
+        duration: "Jun – Jul 2025",
+        highlights: [
+            "Built and shipped a responsive company website end-to-end (PHP, CodeIgniter, MySQL, Bootstrap, JavaScript) with mobile-first UI and RESTful API integrations for core business functions.",
+            "Improved frontend page load speed by ~35% by optimizing Bootstrap components and asset loading.",
+        ],
     },
 ];
 
@@ -56,100 +56,96 @@ export const education = [
     {
         degree: "B.E. Computer Science and Engineering",
         school: "University College of Engineering, Dindigul",
-        duration: "2022 – 2026",
-        details: "CGPA: 8.1 | Honors"
+        duration: "May 2026",
+        details: "CGPA: 8.1 / 10 · No Arrears · With Honors",
     },
-    {
-        degree: "Higher Secondary Certificate (HSC)",
-        school: "Grama Committee Higher Secondary School, Tenkasi",
-        duration: "",
-        details: "Score: 85.8%"
-    },
-    // SSLC omitted for brevity unless requested
 ];
 
 export const projects = [
     {
-        title: "Career Drift Detection System",
+        title: "AI Chatbot Platform with Authentication",
         description:
-            "Full-stack AI career drift system using Python, React, and SQLite with FastAPI, JWT auth, and SQLModel ORM. Integrated a Scikit-learn (Joblib) ML engine to analyze activity patterns and produce real-time drift scores for learning-path alignment.",
-        tech: ["Python", "React", "SQLite", "FastAPI", "JWT", "SQLModel", "Scikit-learn"],
-        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2070&auto=format&fit=crop",
-        links: [{ icon: Github, href: "https://github.com/kavisrimaha" }],
-    },
-    {
-        title: "AI-Powered ChatBot with Authentication and Streaming",
-        description:
-            "Full-stack AI chatbot with Python, React, and SQLite: JWT authentication, REST APIs, SQLAlchemy ORM, and Groq API integration for real-time streamed responses with a modular backend.",
-        tech: ["Python", "React", "SQLite", "JWT", "SQLAlchemy", "Groq API"],
+            "Full-stack AI chatbot with JWT authentication, persistent multi-turn conversation storage, and a React frontend on a FastAPI REST backend. Groq API streams real-time responses at sub-200ms latency; SQLAlchemy ORM handles users and chat history.",
+        tech: ["React", "FastAPI", "Python", "Groq API", "SQLAlchemy", "JWT", "Bootstrap"],
         image:
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
-        links: [{ icon: Github, href: "https://github.com/kavisrimaha" }],
+            "https://images.unsplash.com/photo-1531746797559-6f088ce039ca?q=80&w=2070&auto=format&fit=crop",
+        links: [{ icon: Github, href: "https://github.com/kavisrimaha/chatbot-project" }],
     },
     {
-        title: "Task Management System",
+        title: "Semantic AI Ticket Routing System",
         description:
-            "Productivity app with Django: secure authentication and full CRUD for tasks, routines, and notes; dashboard with real-time totals (completed, pending) and status-based views; Bootstrap and Django templates on the frontend.",
-        tech: ["Python", "Django", "Bootstrap", "CRUD"],
-        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop",
-        links: [{ icon: Github, href: "https://github.com/kavisrimaha" }],
+            "NLP classification engine on 28,587 enterprise support tickets using Sentence-BERT embeddings, reaching 94.2% accuracy and 0.92 F1-score. Reduced manual triage by 82% via automated REST endpoints and a web UI for submission, routing, and management.",
+        tech: ["Python", "FastAPI", "Sentence-BERT", "MySQL", "Cosine Similarity"],
+        image:
+            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+        links: [{ icon: Github, href: "https://github.com/kavisrimaha/semantic-ticket-router" }],
     },
     {
-        title: "Student Attendance Tracker",
+        title: "AI Interview Preparation Bot (RAG)",
         description:
-            "Web-based attendance system using PHP, MySQL, HTML, CSS, and JavaScript with admin and user modules, a structured MySQL schema, and secure session-based authentication.",
-        tech: ["PHP", "MySQL", "JavaScript", "Session Auth"],
-        image: "https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=2070&auto=format&fit=crop",
-        links: [{ icon: Github, href: "https://github.com/kavisrimaha/Projects.git" }],
+            "RAG pipeline that extracts and chunks PDFs, embeds with Sentence Transformers, stores in ChromaDB, and retrieves context for grounded interview-prep answers via a locally hosted Phi-3 model (Ollama), with a Streamlit front end.",
+        tech: ["Python", "LangChain", "ChromaDB", "Sentence Transformers", "Ollama", "Streamlit"],
+        image:
+            "https://images.unsplash.com/photo-1481627834876-b9933f59d650?q=80&w=2128&auto=format&fit=crop",
+        links: [{ icon: Github, href: "https://github.com/kavisrimaha/ai_interview_bot" }],
     },
 ];
 
 export const skills = [
     {
-        category: "Programming Languages",
+        category: "Languages",
         icon: Code2,
         iconColor: "text-emerald-500",
-        subtitle: "Core languages for apps, APIs, and JVM-backed systems.",
-        items: ["Python", "Java"],
+        subtitle: "Application logic, scripting, and data access.",
+        items: ["Python", "JavaScript", "Java", "PHP", "SQL"],
     },
     {
-        category: "Web Development",
+        category: "Frontend",
         icon: Layout,
         iconColor: "text-blue-500",
+        subtitle: "Interfaces built for clarity and mobile-first use.",
+        items: ["React.js", "Bootstrap", "HTML/CSS", "Responsive Design", "Mobile-First Design"],
+    },
+    {
+        category: "Backend & APIs",
+        icon: Server,
+        iconColor: "text-green-500",
+        items: ["FastAPI", "Django", "CodeIgniter", "REST API", "JWT", "SQLAlchemy"],
+    },
+    {
+        category: "Databases",
+        icon: Database,
+        iconColor: "text-purple-500",
+        subtitle: "Relational storage and ORM-backed data layers.",
+        items: ["MySQL", "PostgreSQL", "SQLite", "ORM"],
+    },
+    {
+        category: "AI / ML",
+        icon: Brain,
+        iconColor: "text-pink-500",
         items: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Tailwind CSS",
-            "Django",
-            "MySQL",
-            "PostgreSQL",
-            "REST API",
-            "ORM",
+            "RAG",
+            "LangChain",
+            "ChromaDB",
+            "Sentence-BERT",
+            "Scikit-learn",
+            "NLP",
+            "Groq API",
+            "Ollama",
         ],
     },
     {
-        category: "Tools",
+        category: "Tools & Practices",
         icon: Settings,
         iconColor: "text-orange-500",
-        subtitle: "Version control, collaboration, and quick visual assets.",
-        items: ["Git", "GitHub", "Canva"],
-    },
-    {
-        category: "Soft Skills",
-        icon: Sparkles,
-        iconColor: "text-purple-500",
-        subtitle: "How I work with teams and deadlines.",
-        items: ["Problem Solving", "Time Management", "Adaptability", "Attention to Detail"],
+        subtitle: "Delivery workflow, testing, and architecture patterns.",
+        items: ["Git", "GitHub", "Postman", "Agile/SDLC", "RBAC", "MVC"],
     },
 ];
 
 export const certifications = [
-    "HTML Certificate – Great Learning",
-    "C Certification – Great Foundation",
-    "Technical Supportive Intern – Kottravai Enterprises Pvt. Ltd",
-    "Deloitte – Technology Job Simulation"
+    "Python: Basic to Advanced, and MySQL Database Management Certification",
+    "Software Development Internship Certificate — ANCIT Consulting, 2025",
+    "HackerRank Software Engineer Intern — Assessment Completed",
+    "CGPA 8.1 / 10 · No Arrears · With Honors — B.E. CSE, 2026 | 12th Grade: 87%",
 ];
-
-export const hobbies = ["Editing", "Photography", "Dancing"];

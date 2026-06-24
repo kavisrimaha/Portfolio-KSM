@@ -15,7 +15,7 @@ export function Skills() {
                 <p className="mt-1 text-sm text-muted-foreground">Stack and working style, kept compact.</p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px rounded-2xl border border-border/70 bg-border/50 overflow-hidden">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px rounded-2xl border border-border/70 bg-border/50 overflow-hidden">
                 {skills.map((skill) => {
                     const isOpen = expanded[skill.category];
                     const needsMore = skill.items.length > VISIBLE_COUNT;

@@ -2,6 +2,8 @@ import { Navbar } from "@/components/layout/navbar";
 import { Hero } from "@/components/sections/hero";
 import { Skills } from "@/components/sections/skills";
 import { Experience } from "@/components/sections/experience";
+import { Education } from "@/components/sections/education";
+import { Certifications } from "@/components/sections/certifications";
 import { Projects } from "@/components/sections/projects";
 import { Contact } from "@/components/sections/contact";
 import { personalInfo } from "@/lib/data";
@@ -15,6 +17,8 @@ export default function Home() {
                 <Hero />
                 <Skills />
                 <Experience />
+                <Education />
+                <Certifications />
                 <Projects />
                 <Contact />
             </div>

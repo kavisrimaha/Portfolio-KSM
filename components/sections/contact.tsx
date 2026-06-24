@@ -14,7 +14,7 @@ export function Contact() {
                     <div>
                         <h2 className="text-3xl font-bold mb-4">Let's work together.</h2>
                         <p className="text-primary-foreground/80">
-                           Open to full-stack Python development opportunities and actively seeking roles where I can contribute to scalable, end-to-end web solutions.
+                            {personalInfo.contactBlurb}
                         </p>
                     </div>
 

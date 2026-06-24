@@ -59,8 +59,8 @@ export function Hero() {
                         <h3 className="font-semibold mb-2">Stack</h3>
                         <div className="flex flex-wrap gap-2">
                             <span className="px-2 py-1 bg-secondary rounded-md text-xs font-mono">Python</span>
-                            <span className="px-2 py-1 bg-secondary rounded-md text-xs font-mono">Django</span>
-                            <span className="px-2 py-1 bg-secondary rounded-md text-xs font-mono">SQL</span>
+                            <span className="px-2 py-1 bg-secondary rounded-md text-xs font-mono">FastAPI</span>
+                            <span className="px-2 py-1 bg-secondary rounded-md text-xs font-mono">React</span>
                         </div>
                     </div>
                 </BentoCard>
